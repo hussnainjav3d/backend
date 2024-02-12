@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "its video streaming",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "Mern",
@@ -13,6 +14,12 @@
   "author": "Hussnain Javed",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
   }
 }
