@@ -38,7 +38,6 @@ const userSchema = new Schema(
         },
         refreshToken: {
             type: String,
-            required: true
         },
         watchHistory: {
             type: Schema.Types.ObjectId,
@@ -88,4 +87,4 @@ userSchema.methods.generateRefreshToken = function () {
     )
 }
 
-export const User = mongoose.Model(`User`, userSchema)
+export const User = mongoose.model(`User`, userSchema)
