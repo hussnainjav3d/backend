@@ -24,4 +24,7 @@ jobs:
       - name: Install dependencies
         run: | 
           ls
-          npm install
+          touch .dev.env
+          echo "Hello=${{ secrets.TEST}}" >> .dev.env
+          cat .dev.env
+          npm install  
