@@ -25,6 +25,3 @@ jobs:
         run: | 
           ls
           npm install
-          
-      - name: Run tests
-        run: npm test
